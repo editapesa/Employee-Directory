@@ -2,6 +2,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
+This application is an employee directory created with React, enabling a user to view all employees at once and have quick access to their information. 
 
 ## License
 This project is licensed under the MIT license. Click the link below for more info.
