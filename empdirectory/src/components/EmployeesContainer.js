@@ -7,12 +7,21 @@ import API from '../utils/API';
 
 class EmployeesContainer extends Component {
     state = {
-
+        result: {},
+        search: ''
     };
 
     componentDidMount() {
         this.getEmployees();
     }
+
+    getEmployees = query => {
+        API.search(query)
+        .then(res => this.setState({ result: res.data }))
+        .catch(err => console.log(err));
+    };
+
+    
 
 return (
     // <Header />
