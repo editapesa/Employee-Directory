@@ -1,22 +1,19 @@
 import React from 'react';
+import '../styles/SearchForm.css';
 
 function SearchForm(props) {
     return (
-        <form> 
-            <div className="form-group"> 
-                
+        <div className="form-group"> 
+            <form className='form-inline'> 
                 <input 
                     onChange={props.handleInputChange}
-                    value={props.search}
-                    name='search'
-                    type='text'
+                    type='search'
                     className="form-control"                   
                     placeholder="Search"
                     id='search'
                 /> 
-                <button onClick={props.handleFormSubmit}> </button>
-            </div>
-        </form>
+            </form>
+        </div>       
     );
 }
 
